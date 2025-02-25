@@ -8,8 +8,6 @@ async function getPosts() {
       if (!response.ok) {
         throw new Error('Error en la petición a la API');
       }
-  
-      // Parsear la respuesta a JSON
       const posts = await response.json();
   
       // Obtener el contenedor en el cual se mostrarán los posts
